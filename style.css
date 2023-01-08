@@ -4,8 +4,15 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+html, body {
+    width: 100%; 
+    margin: 0px;
+    font-family: 'Work Sans', sans-serif;
+}
+
 .container {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -14,6 +21,8 @@
 .slider {
     background-image: url('images/banner/banner1.png');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     overflow: hidden;
 }
@@ -37,7 +46,7 @@
     font-weight: 700;
     font-size: 65px;
     line-height: 76px;
-    margin: 24px;
+    margin: 24px 0 24px 24px;
 }
 
 .slider-content2 p {
@@ -52,17 +61,17 @@
 .slider-content2 button {
     width: 160px;
     height: 64px;
-    left: 1210px;
-    top: 578px;
-    color: #FFF;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
     background: #F15B22;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
 
 
 /* Woman section */
-
 .woman {
     display: flex;
     overflow: hidden;
@@ -83,7 +92,6 @@
     padding-top: 200px;
     width: 50%;
     margin-left: 150px;
-
 }
 
 
@@ -92,11 +100,15 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-
+    padding-top: 8px;
 }
 
 .woman-content ul li i {
-    color: #5BC0F8
+    color: #16D887;
+}
+
+.woman-content ul li span {
+    margin-left: 8px;
 }
 
 .woman-content h2 {
@@ -111,10 +123,6 @@
     font-weight: 400;
     font-size: 16px;
 }
-
-
-
-
 
 /* MyPlan Section */
 .myplan {
@@ -140,12 +148,20 @@
 
 }
 
+.cta {
+    max-width: 1200px; 
+    width: 100%; 
+    margin: 0px auto; 
+    border-radius: 8px;   
+}
+
 .container-shadow {
     background-image: url('images/gradient3.png'), url('images/watch.png');
     background-size: cover;
     margin: 100px 0;
     background-position: bottom right, left;
-    width: 1200px;
+    max-width: 1200px;
+    border-radius: 8px;
 }
 
 .container-shadow h2 {
@@ -158,12 +174,14 @@
 
 .btn-call-now {
     width: 160px;
-    height: 55px;
-    left: 294px;
-    top: 2399.26px;
+    height: 64px;
     border: none;
     margin: 0 0 70px 64px;
     color: #F15B22;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 footer {
@@ -182,17 +200,17 @@ footer {
     justify-content: space-between;
     width: 50%;
     margin-bottom: 20px;
-
 }
 
 .Subscribe {
     color: #F8F8F8;
-    text-align: center;
+    /* text-align: center;  */
 }
 
 .future h2 {
     font-weight: 700;
     font-size: 45px;
+    margin-bottom: 16px
 }
 
 .future p {
@@ -204,6 +222,7 @@ footer {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
+    margin-bottom: 16px;
 }
 
 .future h5 {
@@ -213,45 +232,53 @@ footer {
 
 .future ul{
     text-align: left;
+    margin-top: 32px;
 }
+
 .future ul li{
     display: inline-block;
-    margin-top: 20px;
-
+    /* margin-top: 20px; */
+    margin-right: 10px;
+    cursor: pointer;
 }
 
-.Subscribe h2 {
+.subscribe h2 {
     font-weight: 600;
     font-size: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    color: #fff;
 }
 
-.Subscribe h5 {
+.subscribe h5 {
     font-weight: 400;
     font-size: 18px;
-   
 }
 
-.Subscribe {
+.subscribe {
     font-weight: 600;
     font-size: 20px;
-
+    margin-left: 100px;
 }
 
-.Subscribe form input {
+.subscribe form input {
     border:1px solid white;
     background-color: black;
     margin-bottom: 20px;
-    margin-left: 40px;
-    padding: 12px 8px;
+    padding: 18px 10px;
+    border-radius: 8px;
+    width: 325px;
 }
-.Subscribe form input:focus{
+
+.subscribe form input:focus{
     border:1px solid white;
 }
 
 .btn-subscribe {
+    background-color: #fff;
     color: #F15B22;
     padding: 15px;
     font-size: 20px;
-
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
 }
